@@ -1,0 +1,142 @@
+/* 
+Cores: #FF914D
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #FF914D;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    list-style-type: none;
+}
+
+header section{
+    justify-self: center;
+    align-self: center;
+}
+
+nav{
+    justify-self: center;
+    align-self: center;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: black;
+}
+
+#logo {
+    height: 120px;
+}
+
+.social-media {
+    height: 50px;
+}
+
+
+/* Conteúdo principal - Home */
+main {
+    display: grid;
+    min-height: 70vh;
+}
+
+main#home{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main section {
+    margin: 10px;
+    padding: 10px;
+}
+
+#sobre {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+aside {
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: center;
+    align-self: center;
+    background-color: #FF914D;
+}
+
+#conta-corrente {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-right: 1px solid #FF914D;
+}
+
+#cartao {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+/* Rodapé */
+footer {
+    background-color: #FF914D;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 10vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer section {
+    justify-self: center;
+    align-self: center;
+}
+
+footer h3 {
+    background-color: #FFBD59;
+    padding: 5px;
+}
+
+@media screen and (max-width: 375px){
+    body {
+        padding-bottom: 30vh;
+    }
+    
+    .responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conta-corrente {
+        border: none;
+    }
+
+    footer {
+        min-height: 25vh;
+    }
+}
